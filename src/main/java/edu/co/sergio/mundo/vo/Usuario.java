@@ -12,6 +12,11 @@ package edu.co.sergio.mundo.vo;
 public class Usuario {
     private String user1;
     private String nombre;
+    
+    public Usuario(String user1,String nombre){
+    this.user1=user1;
+    this.nombre=nombre;
+    }
 
     public String getUser1() {
         return user1;

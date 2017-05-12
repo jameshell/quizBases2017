@@ -9,9 +9,19 @@ package edu.co.sergio.mundo.vo;
  *
  * @author Labing
  */
-public class Artista {
+public class Artista extends Usuario {
     private String curriculum;
     private String distinciones;
+    
+    public Artista(){
+    super();
+    }
+    
+    public Artista(user1,nombre,curriculum,distinciones){
+    super(user1,nombre);
+    this.curriculum=curriculum;
+    this.distinciones=distinciones;
+    }
 
     public String getCurriculum() {
         return curriculum;
